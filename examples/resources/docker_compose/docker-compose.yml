@@ -1,0 +1,25 @@
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./html:/usr/share/nginx/html:ro
+    depends_on:
+      - api
+
+  api:
+    image: python:3.11-alpine
+    command: python -m http.server 5000
+    ports:
+      - "5000:5000"
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+
+volumes:
+  redis-data:
