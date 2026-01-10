@@ -678,7 +678,7 @@ func (r *ComposeResource) createService(ctx context.Context, projectName, servic
 
 	// Build container config
 	containerConfig := &container.Config{
-		Image:  service.Image,
+		Image: service.Image,
 		Labels: map[string]string{
 			"com.docker.compose.project": projectName,
 			"com.docker.compose.service": serviceName,

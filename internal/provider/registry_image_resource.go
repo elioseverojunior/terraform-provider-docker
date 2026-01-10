@@ -48,15 +48,15 @@ type RegistryAuthConfigModel struct {
 }
 
 type RegistryBuildModel struct {
-	Context       tftypes.String `tfsdk:"context"`
-	Dockerfile    tftypes.String `tfsdk:"dockerfile"`
-	Target        tftypes.String `tfsdk:"target"`
-	BuildArgs     tftypes.Map    `tfsdk:"build_args"`
-	Labels        tftypes.Map    `tfsdk:"labels"`
-	CacheFrom     tftypes.List   `tfsdk:"cache_from"`
-	NoCache       tftypes.Bool   `tfsdk:"no_cache"`
-	ForceRemove   tftypes.Bool   `tfsdk:"force_remove"`
-	Platform      tftypes.String `tfsdk:"platform"`
+	Context     tftypes.String `tfsdk:"context"`
+	Dockerfile  tftypes.String `tfsdk:"dockerfile"`
+	Target      tftypes.String `tfsdk:"target"`
+	BuildArgs   tftypes.Map    `tfsdk:"build_args"`
+	Labels      tftypes.Map    `tfsdk:"labels"`
+	CacheFrom   tftypes.List   `tfsdk:"cache_from"`
+	NoCache     tftypes.Bool   `tfsdk:"no_cache"`
+	ForceRemove tftypes.Bool   `tfsdk:"force_remove"`
+	Platform    tftypes.String `tfsdk:"platform"`
 }
 
 func NewRegistryImageResource() resource.Resource {
@@ -497,4 +497,3 @@ func (r *RegistryImageResource) ImportState(ctx context.Context, req resource.Im
 		}
 	}
 }
-

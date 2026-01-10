@@ -17,10 +17,10 @@ type HubRepositoryTagsDataSource struct {
 }
 
 type HubRepositoryTagsDataSourceModel struct {
-	ID        types.String                  `tfsdk:"id"`
-	Namespace types.String                  `tfsdk:"namespace"`
-	Name      types.String                  `tfsdk:"name"`
-	Tags      []HubRepositoryTagModel       `tfsdk:"tags"`
+	ID        types.String            `tfsdk:"id"`
+	Namespace types.String            `tfsdk:"namespace"`
+	Name      types.String            `tfsdk:"name"`
+	Tags      []HubRepositoryTagModel `tfsdk:"tags"`
 }
 
 type HubRepositoryTagModel struct {

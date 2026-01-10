@@ -21,17 +21,17 @@ type LogsDataSource struct {
 }
 
 type LogsDataSourceModel struct {
-	ID              types.String `tfsdk:"id"`
-	Name            types.String `tfsdk:"name"`
-	Follow          types.Bool   `tfsdk:"follow"`
-	Since           types.String `tfsdk:"since"`
-	Until           types.String `tfsdk:"until"`
-	Tail            types.String `tfsdk:"tail"`
-	Timestamps      types.Bool   `tfsdk:"timestamps"`
-	ShowStdout      types.Bool   `tfsdk:"show_stdout"`
-	ShowStderr      types.Bool   `tfsdk:"show_stderr"`
-	LogsRaw         types.String `tfsdk:"logs_raw"`
-	DiscardHeaders  types.Bool   `tfsdk:"discard_headers"`
+	ID             types.String `tfsdk:"id"`
+	Name           types.String `tfsdk:"name"`
+	Follow         types.Bool   `tfsdk:"follow"`
+	Since          types.String `tfsdk:"since"`
+	Until          types.String `tfsdk:"until"`
+	Tail           types.String `tfsdk:"tail"`
+	Timestamps     types.Bool   `tfsdk:"timestamps"`
+	ShowStdout     types.Bool   `tfsdk:"show_stdout"`
+	ShowStderr     types.Bool   `tfsdk:"show_stderr"`
+	LogsRaw        types.String `tfsdk:"logs_raw"`
+	DiscardHeaders types.Bool   `tfsdk:"discard_headers"`
 }
 
 func NewLogsDataSource() datasource.DataSource {

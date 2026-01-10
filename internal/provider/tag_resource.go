@@ -242,4 +242,3 @@ func (r *TagResource) ImportState(ctx context.Context, req resource.ImportStateR
 		"The source_image attribute must be provided in the Terraform configuration after import.",
 	)
 }
-

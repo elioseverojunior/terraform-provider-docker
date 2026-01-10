@@ -265,6 +265,7 @@ func (p *DockerProvider) DataSources(ctx context.Context) []func() datasource.Da
 		// Docker Engine data sources
 		NewImageDataSource,
 		NewNetworkDataSource,
+		NewNetworksDataSource,
 		NewContainerDataSource,
 		NewComposeDataSource,
 		NewLogsDataSource,

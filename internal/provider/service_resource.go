@@ -52,45 +52,45 @@ type ServiceResourceModel struct {
 }
 
 type TaskSpecModel struct {
-	ContainerSpec tftypes.List `tfsdk:"container_spec"`
-	Resources     tftypes.List `tfsdk:"resources"`
-	RestartPolicy tftypes.List `tfsdk:"restart_policy"`
-	Placement     tftypes.List `tfsdk:"placement"`
-	Networks      tftypes.Set  `tfsdk:"networks"`
-	LogDriver     tftypes.List `tfsdk:"log_driver"`
+	ContainerSpec tftypes.List  `tfsdk:"container_spec"`
+	Resources     tftypes.List  `tfsdk:"resources"`
+	RestartPolicy tftypes.List  `tfsdk:"restart_policy"`
+	Placement     tftypes.List  `tfsdk:"placement"`
+	Networks      tftypes.Set   `tfsdk:"networks"`
+	LogDriver     tftypes.List  `tfsdk:"log_driver"`
 	ForceUpdate   tftypes.Int64 `tfsdk:"force_update"`
 }
 
 type ContainerSpecModel struct {
-	Image      tftypes.String `tfsdk:"image"`
-	Command    tftypes.List   `tfsdk:"command"`
-	Args       tftypes.List   `tfsdk:"args"`
-	Hostname   tftypes.String `tfsdk:"hostname"`
-	Env        tftypes.Map    `tfsdk:"env"`
-	Dir        tftypes.String `tfsdk:"dir"`
-	User       tftypes.String `tfsdk:"user"`
-	Groups     tftypes.List   `tfsdk:"groups"`
-	Privileges tftypes.List   `tfsdk:"privileges"`
-	ReadOnly   tftypes.Bool   `tfsdk:"read_only"`
-	Mounts     tftypes.List   `tfsdk:"mounts"`
-	StopSignal tftypes.String `tfsdk:"stop_signal"`
+	Image           tftypes.String `tfsdk:"image"`
+	Command         tftypes.List   `tfsdk:"command"`
+	Args            tftypes.List   `tfsdk:"args"`
+	Hostname        tftypes.String `tfsdk:"hostname"`
+	Env             tftypes.Map    `tfsdk:"env"`
+	Dir             tftypes.String `tfsdk:"dir"`
+	User            tftypes.String `tfsdk:"user"`
+	Groups          tftypes.List   `tfsdk:"groups"`
+	Privileges      tftypes.List   `tfsdk:"privileges"`
+	ReadOnly        tftypes.Bool   `tfsdk:"read_only"`
+	Mounts          tftypes.List   `tfsdk:"mounts"`
+	StopSignal      tftypes.String `tfsdk:"stop_signal"`
 	StopGracePeriod tftypes.String `tfsdk:"stop_grace_period"`
-	Healthcheck tftypes.List   `tfsdk:"healthcheck"`
-	Hosts       tftypes.List   `tfsdk:"hosts"`
-	DNSConfig   tftypes.List   `tfsdk:"dns_config"`
-	Secrets     tftypes.List   `tfsdk:"secrets"`
-	Configs     tftypes.List   `tfsdk:"configs"`
-	Labels      tftypes.Map    `tfsdk:"labels"`
+	Healthcheck     tftypes.List   `tfsdk:"healthcheck"`
+	Hosts           tftypes.List   `tfsdk:"hosts"`
+	DNSConfig       tftypes.List   `tfsdk:"dns_config"`
+	Secrets         tftypes.List   `tfsdk:"secrets"`
+	Configs         tftypes.List   `tfsdk:"configs"`
+	Labels          tftypes.Map    `tfsdk:"labels"`
 }
 
 type MountModel struct {
-	Target      tftypes.String `tfsdk:"target"`
-	Source      tftypes.String `tfsdk:"source"`
-	Type        tftypes.String `tfsdk:"type"`
-	ReadOnly    tftypes.Bool   `tfsdk:"read_only"`
-	BindOptions tftypes.List   `tfsdk:"bind_options"`
-	VolumeOptions tftypes.List `tfsdk:"volume_options"`
-	TmpfsOptions tftypes.List  `tfsdk:"tmpfs_options"`
+	Target        tftypes.String `tfsdk:"target"`
+	Source        tftypes.String `tfsdk:"source"`
+	Type          tftypes.String `tfsdk:"type"`
+	ReadOnly      tftypes.Bool   `tfsdk:"read_only"`
+	BindOptions   tftypes.List   `tfsdk:"bind_options"`
+	VolumeOptions tftypes.List   `tfsdk:"volume_options"`
+	TmpfsOptions  tftypes.List   `tfsdk:"tmpfs_options"`
 }
 
 type EndpointSpecModel struct {
@@ -107,12 +107,12 @@ type PortConfigModel struct {
 }
 
 type UpdateConfigModel struct {
-	Parallelism     tftypes.Int64  `tfsdk:"parallelism"`
-	Delay           tftypes.String `tfsdk:"delay"`
-	FailureAction   tftypes.String `tfsdk:"failure_action"`
-	Monitor         tftypes.String `tfsdk:"monitor"`
+	Parallelism     tftypes.Int64   `tfsdk:"parallelism"`
+	Delay           tftypes.String  `tfsdk:"delay"`
+	FailureAction   tftypes.String  `tfsdk:"failure_action"`
+	Monitor         tftypes.String  `tfsdk:"monitor"`
 	MaxFailureRatio tftypes.Float64 `tfsdk:"max_failure_ratio"`
-	Order           tftypes.String `tfsdk:"order"`
+	Order           tftypes.String  `tfsdk:"order"`
 }
 
 type ConvergeConfigModel struct {

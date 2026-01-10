@@ -17,9 +17,9 @@ type HubRepositoriesDataSource struct {
 }
 
 type HubRepositoriesDataSourceModel struct {
-	ID           types.String                      `tfsdk:"id"`
-	Namespace    types.String                      `tfsdk:"namespace"`
-	Repositories []HubRepositoryDataSourceModel    `tfsdk:"repositories"`
+	ID           types.String                   `tfsdk:"id"`
+	Namespace    types.String                   `tfsdk:"namespace"`
+	Repositories []HubRepositoryDataSourceModel `tfsdk:"repositories"`
 }
 
 func NewHubRepositoriesDataSource() datasource.DataSource {

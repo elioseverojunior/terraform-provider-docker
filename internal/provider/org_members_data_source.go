@@ -17,9 +17,9 @@ type OrgMembersDataSource struct {
 }
 
 type OrgMembersDataSourceModel struct {
-	ID      types.String       `tfsdk:"id"`
-	OrgName types.String       `tfsdk:"org_name"`
-	Members []OrgMemberModel   `tfsdk:"members"`
+	ID      types.String     `tfsdk:"id"`
+	OrgName types.String     `tfsdk:"org_name"`
+	Members []OrgMemberModel `tfsdk:"members"`
 }
 
 type OrgMemberModel struct {
