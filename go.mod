@@ -3,7 +3,7 @@ module github.com/elioseverojunior/terraform-provider-docker
 go 1.24.0
 
 require (
-	github.com/compose-spec/compose-go/v2 v2.10.0
+	github.com/compose-spec/compose-go/v2 v2.10.1
 	github.com/docker/docker v28.5.2+incompatible
 	github.com/docker/go-connections v0.6.0
 	github.com/hashicorp/terraform-plugin-framework v1.17.0
